@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 namespace FindReplace.Objects
 {
     public class FindReplacer
@@ -17,22 +18,20 @@ namespace FindReplace.Objects
       //  _output.Add(this);
      }
 
-
-  //getters and setters for properties//
-
-      public string Replace()
+    public string Result()
+    {
+      List<string> output = new List<string> {};
+      string[] inputToArray = _input1.Split();
+      Console.WriteLine(inputToArray.Length);
+      for(var i = 0; i < inputToArray.Length; i++)
       {
-      List<string> _output = new List<string> {};
-
-      if (_input2 == _input1)
-      {
-        return _input3;
+        if (inputToArray[i].Contains(_input2))
+        {
+          return inputToArray[i] = inputToArray[i].Replace(_input2, _input3);
+        }
+        else{}
       }
-      else
-      {
-        return "whatever";
-      }
-
+      return "try again";
     }
   }
 }
@@ -41,3 +40,4 @@ namespace FindReplace.Objects
       // {
       //   _TEMPLATEVARIABLE = newVariable;
       // }
+      // public void Replace(string[] output, string input2, string input3)
