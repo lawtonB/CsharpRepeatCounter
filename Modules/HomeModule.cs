@@ -1,9 +1,9 @@
 using Nancy;
-using TEMPLATE.Objects;
+using FindReplace.Objects;
 using System.Collections.Generic;
 using System;
 
-namespace Project
+namespace FindReplaceProject
 {
   public class HomeModule : NancyModule
   {

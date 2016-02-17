@@ -2,15 +2,17 @@ using Xunit;
 using Anagrams;
 using System;
 using System.Collections.Generic;
-namespace  TEMPLATES.Objects
+namespace  FindReplaceTest
 {
-  public class TemplateTest
+  public class FindReplaceTester
   {
     [Fact]
-    public void IsTemplateTest_ForCondition_true()
+    public void IsFindReplace_ForWholeWord_true()
     {
-      //code goes here//
+      string input1 = "world";
+      string input2 = "universe";
+      FindReplacer newFindReplacer = new FindReplacer(input1, input2);
+      Assert.Equal(input1, newFindReplacer.CompareInputs());
     }
-
   }
 }

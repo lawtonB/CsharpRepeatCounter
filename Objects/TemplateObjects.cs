@@ -1,23 +1,27 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-namespace TEMPLATES.Objects
+namespace FindReplace.Objects
 
 {
 
   //variables//
 
-    public class TEMPLATE
+    public class FindReplacer
   {
-      private string _TEMPLATEVARIABLE;
-      private static List<TEMPLATE> _TEMPLATELIST = new List<TEMPLATE> {};
+      private string _input1;
+      private string _input2;
+      private string _input3;
+      private static List<string> _output = new List<string> {};
 
-//construtor//
+//constructor//
 
-  public TEMPLATE(string TEMPLATEVARIABLE)
+  public FindReplacer(string input1, string input2, string input3)
    {
-     _TEMPLATEVARIABLE = TEMPLATEVARIABLE;
-     _TEMPLATELIST.Add(this);
+     _input1 = input1;
+     _input2 = input2;
+     _input3 = input3;
+     _output.Add(this);
    }
 
 
