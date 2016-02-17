@@ -18,26 +18,33 @@ namespace FindReplace.Objects
       //  _output.Add(this);
      }
 
+    public string GetInput1()
+    {
+      return _input1;
+    }
+    public string GetInput2()
+    {
+      return _input2;
+    }
+    public string GetInput3()
+    {
+      return _input3;
+    }
+
     public string Result()
     {
-      List<string> output = new List<string> {};
-      string[] inputToArray = _input1.Split();
-      Console.WriteLine(inputToArray.Length);
+      // List<string> output = new List<string> {};
+      string[] inputToArray = _input1.Split(' ');
+      // Console.WriteLine(inputToArray.Length);
       for(var i = 0; i < inputToArray.Length; i++)
       {
         if (inputToArray[i].Contains(_input2))
         {
-          return inputToArray[i] = inputToArray[i].Replace(_input2, _input3);
+         inputToArray[i] = inputToArray[i].Replace(_input2, _input3);
         }
-        else{}
       }
-      return "try again";
+      string resultList = string.Join(" ", inputToArray);
+      return resultList;
     }
   }
 }
-
-      // public void SetVariable(string newVariable)
-      // {
-      //   _TEMPLATEVARIABLE = newVariable;
-      // }
-      // public void Replace(string[] output, string input2, string input3)

@@ -12,8 +12,9 @@ namespace FindReplaceProject
       Get["/"] = _ => View ["index.cshtml"];
       //loads index view at root//
 
-      Get["/other_page"] = _ => {
-      return View["template.cshtml"];
+      Post["/"] = _ => {
+      FindReplacer newFindReplacer = new FindReplacer(Request.Form["phrase"], Request.Form["replace"], Request.Form["with-this"]);
+      return View["results.cshtml", newFindReplacer];
       };
     }
   }
