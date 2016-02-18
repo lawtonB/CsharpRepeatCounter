@@ -18,6 +18,10 @@ input {
   margin:5px 0;
 }
 
-form, h4 {
+form, h4, p {
    margin-left: 20px;
+}
+
+.output {
+  font-weight: bold;
 }
