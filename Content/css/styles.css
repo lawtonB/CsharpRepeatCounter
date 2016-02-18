@@ -1,0 +1,23 @@
+body {
+ background-color: lightgrey;
+ margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input, label {
+  display: inline-block;
+}
+label {
+  width: 29%;
+}
+input {
+  width: 40%;
+  margin:5px 0;
+}
+
+form, h4 {
+   margin-left: 20px;
+}
