@@ -20,5 +20,19 @@ namespace RepeatCounterTest
       string testPhrase = "dog";
       Assert.Equal(0, RepeatCounter.CountRepeats(testWord, testPhrase));
     }
+    [Fact]
+    public void DoesRepeatCounter_ForPhrase_Equal2()
+    {
+    string testWord = "cat";
+    string testPhrase = "cat cat";
+    Assert.Equal(2, RepeatCounter.CountRepeats(testWord, testPhrase));
+    }
+    [Fact]
+    public void DoesRepeatCounter_ForUpcaseWord_Equal1()
+    {
+    string testWord = "CAT";
+    string testPhrase = "cat";
+    Assert.Equal(1, RepeatCounter.CountRepeats(testWord, testPhrase));
+    }
   }
 }

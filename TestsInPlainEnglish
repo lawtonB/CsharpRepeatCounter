@@ -13,3 +13,7 @@
 7. user inputs multi word test phrase "cat cat"
 8. user inputs single test word "cat"
 9. test check single word "cat" against phrase "cat cat" and returns number of times "cat" appears: 2
+
+user inputs test word "cAt"
+user inputs test phrase "cat"
+test checks that upcase word cAt still matches lowcase phrase "cat" and returns 1 

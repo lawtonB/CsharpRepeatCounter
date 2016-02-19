@@ -1,5 +1,5 @@
 // using Nancy;
-// using FindReplace.Objects;
+// using RepeatCount.Objects;
 // using System.Collections.Generic;
 // using System;
 //
@@ -13,8 +13,8 @@
 //       //loads index view at root//
 //
 //       Post["/"] = _ => {
-//       FindReplacer newFindReplacer = new FindReplacer(Request.Form["phrase"], Request.Form["replace"], Request.Form["with-this"]);
-//       return View["results.cshtml", newFindReplacer];
+//       RepeatCounter newRepeatCounter = new RepeatCounter(Request.Form["word"], Request.Form["phrase"]);
+//       return View["results.cshtml", newRepeatCounter];
 //       };
 //     }
 //   }
