@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-namespace FindReplace.Objects
+namespace RepeatCounter.Objects
 {
-    public class FindReplacer
+    public class RepeatCounter
   {
       private string _input1;
       private string _input2;
