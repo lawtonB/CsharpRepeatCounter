@@ -9,3 +9,7 @@
 7. user inputs multi word test phrase "cat dog"
 8. user inputs single test word "cat"
 9. test check single word "cat" against phrase "cat dog" and returns number of times "cat" appears: 1
+
+7. user inputs multi word test phrase "cat cat"
+8. user inputs single test word "cat"
+9. test check single word "cat" against phrase "cat cat" and returns number of times "cat" appears: 2
