@@ -2,7 +2,7 @@ using Xunit;
 using RepeatCounter.Objects;
 using System;
 using System.Collections.Generic;
-namespace  RepeatCounterTest
+namespace RepeatCounterTest
 {
   public class RepeatCounterTester
   {
@@ -12,7 +12,7 @@ namespace  RepeatCounterTest
       string input1 = "cat";
       string input2 = "cat";
       RepeatCounter newRepeatCounter = new RepeatCounter(input1, input2);
-      Assert.Equal(1, newRepeatCounter.CountRepeats());
+      Assert.Equal(1, newRepeatCounter.Result());
     }
     [Fact]
     public void IsRepeatCounter_ForSingleWord_false()
@@ -20,7 +20,7 @@ namespace  RepeatCounterTest
       string input1 = "cat";
       string input2 = "dog";
       RepeatCounter newRepeatCounter = new RepeatCounter(input1, input2);
-      Assert.Equal(0, newRepeatCounter.CountRepeats());
+      Assert.Equal(0, newRepeatCounter.Result());
     }
   }
 }
