@@ -14,7 +14,7 @@ namespace RepeatCount.Objects
         // Console.WriteLine(phraseArray);
       for(var i = 0; i < phraseArray.Length; i++)
       {
-        if (phraseArray[i] == word)
+        if (phraseArray[i] == word.ToLower())
         {
           result += 1;
         }
