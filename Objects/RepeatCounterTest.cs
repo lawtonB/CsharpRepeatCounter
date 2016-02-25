@@ -34,5 +34,12 @@ namespace RepeatCounterTest
     string testPhrase = "cat";
     Assert.Equal(1, RepeatCounter.CountRepeats(testWord, testPhrase));
     }
+    [Fact]
+    public void DoesRepeatCounter_ForPartialWord_notEqual()
+    {
+    string testWord = "cat";
+    string testPhrase = "cathedral";
+    Assert.Equal(0, RepeatCounter.CountRepeats(testWord, testPhrase));
+    }
   }
 }
