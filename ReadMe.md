@@ -1,37 +1,30 @@
-# _{RepeatCounter}_
+# RepeatCounter
 
-#### _{Simple program that counts the number of times a word is repeated in a phrase}, {2/19/2016}_
+#### Simple program that counts the number of times a word is repeated in a phrase and returns the amount of times repeated, 2/19/2016
 
-#### By _**{lawtonB}**_
+#### By lawtonB
 
 ## Description
 
-_{Simple program that counts the number of times a word is repeated in a phrase }_
+counts the number of times a word is repeated in a phrase
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+clone rep
+dnx kestrel on windows powershell
 
 ## Known Bugs
 
-_{currently final test on downcase not passing }_
+currently final test on downcase not passing
 
 ## Support and contact details
 
-_{i welcome all contributions to my humble project}_
+I welcome all contributions to my humble project
 
 ## Technologies Used
 
-_{C#, Nancy, Razor, HTML}_
+C#, Nancy, Razor, HTML
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2015 **_{lawtonB}_**
+Copyright (c) 2015 lawtonB
